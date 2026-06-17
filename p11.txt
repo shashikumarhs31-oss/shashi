@@ -1,0 +1,163 @@
+exp:- 01
+------------------------
+
+
+$ git --version
+$ ls
+$ cd Sharath
+$ git init
+$ git config --global user.name "sharathth-hub"
+$ git config --global user.gmail "sharathth600@gmail.com"
+$ git config --list
+$ cat>p3.txt
+i will become a engineer
+$ git add p3.txt
+$ git commit -m "first commit"
+$ git push -u origin master
+$ git pull origin master
+$ cat p3.txt
+i  will be a engineer
+
+
+exp:-2
+--------------
+
+$ ls
+$ cd Sharath
+$ git init
+$ git config --global user.name "sharathtn-hub"
+$ git config --global user.email "sharathtn600@gmail.com"
+$ git config --list
+$ cat>s2.txt
+im in the govt hostel
+$ git add s2.txt
+$ git commit -m "my commit message"
+$ git status
+$ git log
+$ git push -u origin master
+$ git pull origin master
+$ cat s2.txt
+im in the govt hostel at banglore
+
+
+exp:-3&4
+===========
+
+$git --version
+$ ls
+$ cd Sharath
+$ git init
+$ git config --global user.name "sharathth-hub"
+$ git config --global user.gmail "sharathth600@gmail.com"
+$ git config --list
+$ cat p3.txt
+$ git branch
+* master
+  second_branch
+  test
+$ git branch second
+$ git switch second
+$ cat>p3.txt
+i drunk water
+$ git add p3.txt
+$ git commit -m "ggg"
+$ git switch master
+$ cat p3.txt
+now time to drink coffe
+$ git switch second
+Switched to branch 'second'
+$ cat p3.txt
+i drunk water
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+$ git merge second
+Updating f092676..635d723
+Fast-forward
+ p3.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ ls
+p1.txt  p2.txt  p3.txt  q1.txt
+$ cat p3.txt
+i drunk water
+
+
+exp:-5
+---------
+$ cat>p1.txt
+hi boby
+$ git stash
+$ git stash list
+stash@{0}: WIP on master: 230eac4 second
+$ git switch second
+$ git switch master
+$ git stash pop
+$ git stash apply
+No stash entries found.
+$ git stash list
+$ git stash clear
+$git stash drop stash{0}
+
+
+
+
+exp:-8
+----------
+
+$cd sharath
+$git init
+$ git log --oneline -n 5
+$ git log -n 5 --pretty=format:"%h - %an , %ar : %s"
+
+
+
+
+exp:-9 
+----------
+
+$cd sharath
+$git init
+$ cat>e9.txt
+hello exp 9
+$ git add e9.txt
+$ git commit -m "nine"
+$ git log --oneline
+6c9237b (HEAD -> master) nine
+$ git branch
+* master
+  second
+  second_branch
+  test
+$ git switch second
+$ cat>e10.txt
+adding new file
+$ git add e10.txt
+$ git commit -m "ten"
+$ git log --oneline
+1765dde (HEAD -> second) ten
+$ git switch master
+$ git cherry-pick 1765dde
+$ git status
+$ git log --oneline
+489f410 (HEAD -> master) ten
+6c9237b nine
+
+
+exp:- 10
+--------
+
+$ git --version
+$ ls
+$ cd Sharath
+$ git init
+$ git config --global user.name "sharathth-hub"
+$ git config --global user.gmail "sharathth600@gmail.com"
+$ git config --list
+$ git log -5
+$ git log --author="sharathtn-hub"
+$ git log --since="2026-06-16"
+$ git log --until="2026-06-17"
+$ git log --author="sharathtn-hub"  --since="2026-06-016" --until="2026-06-17" --oneline
+
+
+
